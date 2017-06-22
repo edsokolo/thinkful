@@ -18,6 +18,8 @@ ingredients = {
     "fruity": ["slice of orange", "dash of cassis", "cherry on top"],
 }
 
+name = ''
+
 def bartender_ask(qs):
     for q in qs:
         print (qs[q])
@@ -34,7 +36,10 @@ def create_drink(answers):
     drink = []
 
     for answer in answers:
-        drink.append(random.choice(ingredients[answer]))
+        if answers[answer] == True:
+            drink.append(random.choice(ingredients[answer]))
+    if len(drink) == 0:
+        drink.append("Ye didn't order nothin'")
     return drink
 
 if __name__ == '__main__':
