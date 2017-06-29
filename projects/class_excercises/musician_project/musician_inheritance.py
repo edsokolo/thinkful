@@ -70,8 +70,8 @@ class Band(object):
         for member in self.members:
             return print("{} on the {}".format(member.name,member.instrument))
 
-dave = Bassist("Dave")
-steve = Guitarist("Steve")
-frank = Drummer("Frank")
-bing = Band([dave,steve,frank], "The Bing Bongs")
-bing.play_music(4)
+#dave = Bassist("Dave")
+#steve = Guitarist("Steve")
+#frank = Drummer("Frank")
+#bing = Band([dave,steve,frank], "The Bing Bongs")
+#bing.play_music(4)
